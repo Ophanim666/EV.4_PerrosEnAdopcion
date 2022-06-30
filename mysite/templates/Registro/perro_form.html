@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block titulo_principal %} CRUD: Insert {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Dar en adopcion</h1>
+
+    <div class="content container">
+        <form method="POST">
+            {% csrf_token %} {{ form.as_p }}
+            <button type="submit" class="btn btn-primary btn-lg">agregar</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

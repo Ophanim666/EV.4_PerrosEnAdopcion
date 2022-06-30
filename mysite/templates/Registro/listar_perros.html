@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Listar perros</title>
+  </head>
+
+  <body>
+    <title>{% block title %}Listar perros{% endblock %}</title>
+    
+    {% block content %} 
+    <div class="container">
+      <h1>Perros en adopcion</h1>
+    </div>
+    <p></p>
+    {% for c in perros %}
+    <div class="container">
+      <p>Nombre: {{ c.nombre }}</p>
+      <p>Edad: {{ c.edad }}</p>
+      <p>Raza: {{ c.raza }}</p>
+      <button type="button" class="btn btn-primary">Adoptar</button>
+    </div>
+    {% endfor %} {% endblock %}
+  </body>
+</html>
