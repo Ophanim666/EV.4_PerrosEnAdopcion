@@ -9,6 +9,7 @@ GRADOS_PRODUCTOS = (
 class Productos (models.Model):
     fotografia = models.ImageField(upload_to='productos')
     nombre = models.CharField(max_length=50)
+    # precio = models.IntegerField()  
     grado_productos = models.CharField(max_length=50, choices=GRADOS_PRODUCTOS)
 
     def __str__(self):

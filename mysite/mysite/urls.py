@@ -26,10 +26,10 @@ urlpatterns = [
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),  
     
     path('registro', include('Registro.urls')),
-    # localhost:8000/usuario
+
     path('usuario', include('Usuario.urls')),
-    path('productos', include('Productos.urls')),
     
+    path('', include('Productos.urls')),
     
     # login
     # path('login/', auth_views.LoginView.as_view(template_name='Usuario/login.html'), name='login'),

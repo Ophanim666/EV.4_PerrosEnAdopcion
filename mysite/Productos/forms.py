@@ -9,16 +9,19 @@ class ProductoForm(forms.ModelForm):
         fields = (
             'fotografia',
             'nombre',
-            'grado_productos'
+            # 'precio',
+            'grado_productos',
         )
         labels = {
             'fotografia':'Fotografia',
             'nombre':'Nombre',
+            # 'precio':'Precio',
             'grado_productos':'Grado_productos'
         }
         widgets = {
             # 'fotografia':forms.FileInput(attrs={'class':'form-control','type':'file'}),
             'nombre':forms.TextInput(attrs={'class':'form-control'}),
+            # 'precio':forms.TextInput(attrs={'class':'form-control'}),
             'grado_productos':forms.Select(choices="GRADOS_PRODUCTOS", attrs={'class':'form-control'}),
         }
 

@@ -9,7 +9,7 @@
 <hr>
 
 {% if not object_list %}
-<h1>No hay registro de docentes</h1>
+<h1>No hay registro de productos</h1>
 <br><br><br><br><br><br><br><br>
 {% else %}
 <table class="table table-bordered">
@@ -27,8 +27,8 @@
              <td>{{ productos.nombre }}</td>
              <td>{{ productos.grado_productos }}</td>
              <td>
-                 <a class="btn btn-primary" href="{% url 'docentes_update' productos.id%}">  Editar  </a>
-                 <a class="btn btn-danger" href="{% url 'docentes_borrar' productos.id%}">Eliminar</a>
+                 {% comment %} <a class="btn btn-primary" href="{% urls 'producto_form' productos.id%}">  Editar  </a>
+                 <a class="btn btn-danger" href="{% urls 'producto_borrar' productos.id%}">Eliminar</a> {% endcomment %}
              </td>
              
          </tr>

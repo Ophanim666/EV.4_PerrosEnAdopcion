@@ -16,5 +16,4 @@ class PerroForm(forms.ModelForm):
             'nombre': forms.TextInput(attrs={'class': 'form-control'}),
             'edad': forms.TextInput(attrs={'class': 'form-control'}),
             'raza': forms.TextInput(attrs={'class': 'form-control'}),
-           
         }
