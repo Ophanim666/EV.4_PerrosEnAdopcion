@@ -111,3 +111,6 @@ def perro_element(request, pk):
 # borrar
 def home(request):
     return render(request, 'home.html')
+
+def iden_razas(request):
+    return render(request, 'identificador_de_razas.html')

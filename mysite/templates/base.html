@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/perritos.css' %}" type="text/css">
+    
 
 
     <!-- Estilo menu responsive -->
@@ -61,6 +63,7 @@
                                 <li class="nav-item"><a href="{% url 'registrar' %}">Registrarse</a></li>
                                 {% comment %} en progreso {% endcomment %}
                                 <li class="nav-item"><a href="{% url 'perro_collection' %}">API</a></li>
+                                <li class="nav-item"><a href="{% url 'iden_razas' %}">Identificador de razas</a></li>
                                 
                                 <li>
                                     {% if user.is_authenticated %}
@@ -161,6 +164,7 @@
     <script src="{%  static 'js/jquery.slicknav.js' %}"></script>
     <script src="{%  static 'js/owl.carousel.min.js' %}"></script>
     <script src="{%  static 'js/main.js' %}"></script>
+    <script src="{%  static 'js/perritos.js' %}"></script>
     {% endblock %}
 
 </body>
