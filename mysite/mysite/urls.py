@@ -29,7 +29,7 @@ urlpatterns = [
 
     path('usuario', include('Usuario.urls')),
     
-    path('', include('Productos.urls')),
+    
     
     # login
     # path('login/', auth_views.LoginView.as_view(template_name='Usuario/login.html'), name='login'),
