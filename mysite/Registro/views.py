@@ -1,4 +1,6 @@
+from enum import auto
 from django.shortcuts import render, redirect
+from requests import request
 from .models import Perro
 from .forms import PerroForm
 
@@ -44,6 +46,8 @@ class PerroCreate(CreateView):
     form_class = PerroForm
     template_name = 'Registro/perro_form.html'
     success_url = reverse_lazy("add_perro")
+    
+
 
 class PerroList(ListView):
     model = Perro

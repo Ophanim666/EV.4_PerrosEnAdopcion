@@ -15,16 +15,16 @@
 
         <thead>
             <tr>
+                <th>Fotografia</th>
                 <th>Nombre</th>
                 <th>Edad</th>
                 <th>Raza</th>
-                <th></th>
-                <th></th>
             </tr>
         </thead>
         <tbody>
             {% for perros in object_list %}
             <tr>
+                <td><img src= ../../static/images/{{ perros.imagen }} style="width: 100px;"/> </td>
                 <th scope="row">{{ perros.nombre }} </th>
                 <td>{{ perros.edad }}</td>
                 <td>{{ perros.raza }}</td>
