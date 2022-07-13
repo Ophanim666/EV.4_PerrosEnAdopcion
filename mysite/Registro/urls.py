@@ -33,4 +33,7 @@ urlpatterns = [
     # borrar
     path('home',views.home, name='home'), 
     path('identificador_de_razas.html', views.iden_razas, name='iden_razas'),
+    
+    # ------------------------------------------------------------------------------------------------------------------------------
+
 ]
